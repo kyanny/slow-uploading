@@ -1,3 +1,2 @@
-
-web: unicorn -N -c unicorn.rb -p $PORT
-rainbows: rainbows -N -c rainbows.rb -p $PORT
+unicorn: unicorn -N -c unicorn.rb -l localhost:9292
+puma: puma -C puma.rb
